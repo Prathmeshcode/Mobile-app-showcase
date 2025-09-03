@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cross-Platform Mobile App | KalaGoon Mobile Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="assets/mobile.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="fas fa-mobile-alt me-2"></i>MobileHub Pro
+            </a>
+            
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="https://github.com/prathmeshcode/mobile-app-showcase" target="_blank">
+                    <i class="fab fa-github"></i> Source Code
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <div class="badge bg-success mb-3 fs-6">
+                            <i class="fas fa-award me-1"></i> Cross-Platform Excellence
+                        </div>
+                        <h1 class="display-4 fw-bold mb-4">
+                            Cross-Platform <span class="text-primary">Mobile App</span>
+                        </h1>
+                        <p class="lead mb-4">
+                            Native performance with cross-platform efficiency. One codebase powering iOS, 
+                            Android, and Web applications with 60% development cost savings.
+                        </p>
+                        
+                        <!-- Business Impact Stats -->
+                        <div class="row g-3 mb-4">
+                            <div class="col-4">
+                                <div class="impact-stat text-center">
+                                    <h3 class="text-success fw-bold mb-1">60%</h3>
+                                    <small class="text-muted">Cost Savings</small>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="impact-stat text-center">
+                                    <h3 class="text-success fw-bold mb-1">3x</h3>
+                                    <small class="text-muted">Faster Development</small>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="impact-stat text-center">
+                                    <h3 class="text-success fw-bold mb-1">95%</h3>
+                                    <small class="text-muted">Code Reusability</small>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Tech Stack -->
+                        <div class="tech-stack mb-4">
+                            <h6 class="fw-bold mb-2">Tech Stack:</h6>
+                            <span class="badge bg-primary me-2 mb-2">React Native</span>
+                            <span class="badge bg-success me-2 mb-2">Expo</span>
+                            <span class="badge bg-info me-2 mb-2">TypeScript</span>
+                            <span class="badge bg-warning text-dark me-2 mb-2">Firebase</span>
+                            <span class="badge bg-secondary me-2 mb-2">Redux</span>
+                        </div>
+                        
+                        <div class="hero-actions">
+                            <button class="btn btn-primary btn-lg me-3" onclick="showMobileDemo()">
+                                <i class="fas fa-play me-2"></i>Live Demo
+                            </button>
+                            <button class="btn btn-outline-primary btn-lg" onclick="downloadApp()">
+                                <i class="fas fa-download me-2"></i>Download APK
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="mobile-showcase">
+                        <div class="phone-mockups">
+                            <!-- iPhone Mockup -->
+                            <div class="phone-mockup iphone" data-platform="ios">
+                                <div class="phone-frame">
+                                    <div class="phone-screen">
+                                        <div class="screen-content" id="iosScreen">
+                                            <div class="app-header">
+                                                <div class="status-bar">
+                                                    <span class="time">9:41</span>
+                                                    <div class="indicators">
+                                                        <i class="fas fa-signal"></i>
+                                                        <i class="fas fa-wifi"></i>
+                                                        <i class="fas fa-battery-three-quarters"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="nav-header">
+                                                    <h6>MobileHub Pro</h6>
+                                                    <i class="fas fa-bell"></i>
+                                                </div>
+                                            </div>
+                                            <div class="app-content">
+                                                <div class="welcome-card">
+                                                    <h5>Welcome back, User!</h5>
+                                                    <p>Discover amazing features in our app</p>
+                                                </div>
+                                                <div class="feature-grid">
+                                                    <div class="feature-item">
+                                                        <i class="fas fa-shopping-bag"></i>
+                                                        <span>Shop</span>
+                                                    </div>
+                                                    <div class="feature-item">
+                                                        <i class="fas fa-heart"></i>
+                                                        <span>Favorites</span>
+                                                    </div>
+                                                    <div class="feature-item">
+                                                        <i class="fas fa-user"></i>
+                                                        <span>Profile</span>
+                                                    </div>
+                                                    <div class="feature-item">
+                                                        <i class="fas fa-cog"></i>
+                                                        <span>Settings</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="phone-button"></div>
+                                </div>
+                            </div>
+                            
+                            <!-- Android Mockup -->
+                            <div class="phone-mockup android" data-platform="android">
+                                <div class="phone-frame">
+                                    <div class="phone-screen">
+                                        <div class="screen-content" id="androidScreen">
+                                            <div class="app-header android-header">
+                                                <div class="status-bar">
+                                                    <div class="left-indicators">
+                                                        <span class="time">21:19</span>
+                                                    </div>
+                                                    <div class="right-indicators">
+                                                        <i class="fas fa-signal"></i>
+                                                        <i class="fas fa-wifi"></i>
+                                                        <span class="battery">85%</span>
+                                                    </div>
+                                                </div>
+                                                <div class="nav-header">
+                                                    <h6>MobileHub Pro</h6>
+                                                    <i class="fas fa-bell"></i>
+                                                </div>
+                                            </div>
+                                            <div class="app-content">
+                                                <div class="product-list">
+                                                    <div class="product-item">
+                                                        <div class="product-image"></div>
+                                                        <div class="product-info">
+                                                            <h6>Premium Product</h6>
+                                                            <p>₹2,999</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-item">
+                                                        <div class="product-image"></div>
+                                                        <div class="product-info">
+                                                            <h6>Featured Item</h6>
+                                                            <p>₹1,499</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="platform-switcher">
+                            <button class="btn btn-sm btn-outline-primary active" onclick="switchPlatform('ios')">
+                                <i class="fab fa-apple"></i> iOS
+                            </button>
+                            <button class="btn btn-sm btn-outline-primary" onclick="switchPlatform('android')">
+                                <i class="fab fa-android"></i> Android
+                            </button>
+                            <button class="btn btn-sm btn-outline-primary" onclick="switchPlatform('web')">
+                                <i class="fas fa-globe"></i> Web
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="fw-bold">App Features & Capabilities</h2>
+                    <p class="text-muted">Built with modern mobile development practices</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-card text-center h-100">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-user-shield fa-3x text-primary"></i>
+                        </div>
+                        <h5>Secure Authentication</h5>
+                        <p class="text-muted">Biometric login, OAuth integration, and secure token management for user safety.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="feature-card text-center h-100">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-sync-alt fa-3x text-success"></i>
+                        </div>
+                        <h5>Real-time Sync</h5>
+                        <p class="text-muted">Seamless data synchronization across all devices with offline capability.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="feature-card text-center h-100">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-bell fa-3x text-warning"></i>
+                        </div>
+                        <h5>Push Notifications</h5>
+                        <p class="text-muted">Smart notification system with personalization and scheduling features.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="feature-card text-center h-100">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-mobile-alt fa-3x text-info"></i>
+                        </div>
+                        <h5>Native Performance</h5>
+                        <p class="text-muted">60 FPS smooth animations and native component integration for optimal UX.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="feature-card text-center h-100">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-cloud fa-3x text-secondary"></i>
+                        </div>
+                        <h5>Cloud Integration</h5>
+                        <p class="text-muted">Firebase backend with real-time database and cloud functions support.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="feature-card text-center h-100">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-chart-line fa-3x text-danger"></i>
+                        </div>
+                        <h5>Analytics Dashboard</h5>
+                        <p class="text-muted">Comprehensive user behavior tracking and performance analytics.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Impact Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="impact-showcase">
+                <div class="impact-header text-center mb-5">
+                    <h4 class="fw-bold">
+                        <i class="fas fa-rocket me-2 text-primary"></i>
+                        Business Impact: Cross-Platform Mobile Success
+                    </h4>
+                </div>
+                
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <div class="impact-content">
+                            <blockquote class="blockquote">
+                                <p class="fs-5">"KalaGoon's cross-platform approach saved us ₹25 lakhs and 6 months of development time. Instead of building separate iOS and Android teams, we launched on both platforms simultaneously with a single codebase. The app performance is indistinguishable from native apps, and our users love the consistent experience across devices. We now reach 100% of our mobile audience with just one development team."</p>
+                                <footer class="blockquote-footer mt-3">
+                                    <strong>Rohit Gupta</strong> <cite title="Source Title">CEO, RetailTech Innovations</cite>
+                                </footer>
+                            </blockquote>
+                            
+                            <div class="row mt-4">
+                                <div class="col-md-3">
+                                    <div class="impact-metric text-center">
+                                        <h3 class="text-success">60%</h3>
+                                        <p class="mb-0">Development Cost Savings</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="impact-metric text-center">
+                                        <h3 class="text-primary">95%</h3>
+                                        <p class="mb-0">Code Reusability</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="impact-metric text-center">
+                                        <h3 class="text-info">3x</h3>
+                                        <p class="mb-0">Faster Time to Market</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="impact-metric text-center">
+                                        <h3 class="text-warning">100%</h3>
+                                        <p class="mb-0">Platform Coverage</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 text-center">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&h=200&fit=crop&crop=face" 
+                             alt="CEO" class="rounded-circle mb-3" width="150" height="150">
+                        <div class="download-section">
+                            <h6 class="fw-bold mb-3">Try Our Demo App</h6>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-dark" onclick="downloadApp()">
+                                    <i class="fab fa-apple me-2"></i>Download for iOS
+                                </button>
+                                <button class="btn btn-success" onclick="downloadApp()">
+                                    <i class="fab fa-google-play me-2"></i>Get it on Google Play
+                                </button>
+                                <button class="btn btn-primary" onclick="showPWA()">
+                                    <i class="fas fa-globe me-2"></i>Open Web App
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Architecture -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="architecture-section">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">Technical Architecture</h2>
+                    <p class="text-muted">Modern cross-platform mobile development stack</p>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-md-3">
+                        <div class="tech-layer">
+                            <h6 class="text-primary fw-bold">
+                                <i class="fas fa-mobile-alt me-2"></i>Frontend
+                            </h6>
+                            <div class="tech-items">
+                                <span class="badge bg-primary mb-2">React Native</span>
+                                <span class="badge bg-primary mb-2">Expo</span>
+                                <span class="badge bg-primary mb-2">TypeScript</span>
+                                <span class="badge bg-primary mb-2">React Navigation</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <div class="tech-layer">
+                            <h6 class="text-success fw-bold">
+                                <i class="fas fa-server me-2"></i>Backend
+                            </h6>
+                            <div class="tech-items">
+                                <span class="badge bg-success mb-2">Firebase</span>
+                                <span class="badge bg-success mb-2">Node.js</span>
+                                <span class="badge bg-success mb-2">Express.js</span>
+                                <span class="badge bg-success mb-2">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <div class="tech-layer">
+                            <h6 class="text-info fw-bold">
+                                <i class="fas fa-cogs me-2"></i>Services
+                            </h6>
+                            <div class="tech-items">
+                                <span class="badge bg-info mb-2">Push Notifications</span>
+                                <span class="badge bg-info mb-2">Analytics</span>
+                                <span class="badge bg-info mb-2">Crash Reporting</span>
+                                <span class="badge bg-info mb-2">Deep Linking</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <div class="tech-layer">
+                            <h6 class="text-warning fw-bold">
+                                <i class="fas fa-tools me-2"></i>DevOps
+                            </h6>
+                            <div class="tech-items">
+                                <span class="badge bg-warning text-dark mb-2">EAS Build</span>
+                                <span class="badge bg-warning text-dark mb-2">CodePush</span>
+                                <span class="badge bg-warning text-dark mb-2">App Center</span>
+                                <span class="badge bg-warning text-dark mb-2">Fastlane</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="architecture-diagram mt-5">
+                    <div class="text-center">
+                        <h6 class="fw-bold mb-3">Development Workflow</h6>
+                        <div class="workflow-steps">
+                            <div class="step">
+                                <i class="fas fa-code"></i>
+                                <span>Write Once</span>
+                            </div>
+                            <div class="arrow">→</div>
+                            <div class="step">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Test on Device</span>
+                            </div>
+                            <div class="arrow">→</div>
+                            <div class="step">
+                                <i class="fas fa-rocket"></i>
+                                <span>Deploy to Stores</span>
+                            </div>
+                            <div class="arrow">→</div>
+                            <div class="step">
+                                <i class="fas fa-users"></i>
+                                <span>Reach All Users</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-3">Ready to Launch Your Mobile App?</h2>
+            <p class="lead mb-4">Join 100+ businesses that chose KalaGoon for cross-platform mobile development</p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="mailto:prathmeshdhote@gmail.com" class="btn btn-light btn-lg">
+                    <i class="fas fa-envelope me-2"></i>Get Free Quote
+                </a>
+                <button class="btn btn-outline-light btn-lg" onclick="scheduleDemo()">
+                    <i class="fas fa-video me-2"></i>Schedule Demo
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">
+                        <strong>Built by KalaGoon Software Solutions Pvt. Ltd.</strong><br>
+                        <small>Cross-platform mobile development and native app solutions</small>
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="contact-info">
+                        <a href="mailto:prathmeshdhote@gmail.com" class="text-white text-decoration-none me-3">
+                            <i class="fas fa-envelope"></i> prathmeshdhote@gmail.com
+                        </a>
+                        <a href="tel:+919529169879" class="text-white text-decoration-none">
+                            <i class="fas fa-phone"></i> +91 95291 69879
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/mobile.js"></script>
+</body>
+</html>
